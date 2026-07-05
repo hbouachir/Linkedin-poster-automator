@@ -18,7 +18,9 @@ import webbrowser
 import urllib.parse
 import http.server
 import requests
+from dotenv import load_dotenv
 
+load_dotenv()
 CLIENT_ID = os.environ["LINKEDIN_CLIENT_ID"]
 CLIENT_SECRET = os.environ["LINKEDIN_CLIENT_SECRET"]
 REDIRECT_URI = "http://localhost:8000/callback"
